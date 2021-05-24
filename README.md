@@ -1,2 +1,2 @@
 # Resume
-My resume structure in LaTeX
+My resume structure in LaTeX.
