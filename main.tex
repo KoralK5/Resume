@@ -1,0 +1,183 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{hyperref}
+\RequirePackage{fontawesome}
+
+\ifxetexorluatex
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\input{pubs-authoryear}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Koral Kulacoglu}
+\tagline{Backend Developer}
+\photoR{2.8cm}{AI}
+
+\personalinfo{
+    \normalsize
+    \email{kulacoglukoral@gmail.com}
+    \phone{647-544-4655}
+    \location{Thornhill, Ontario}
+    \github{KoralK5}
+}
+
+\makecvheader
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+\cvsection{Experience}
+
+
+\cvevent{{Backend Developer}}{Unitic}{December 2020 -- Ongoing}{Remote}
+\begin{itemize}
+\item Built and integrated an artificial neural network system to \newline generate online therapy plans for Tourette syndrome.
+\item Developed Python scripts to automate formatting the HTML code of diagnostic figures.
+\item Edited HTML/CSS/JS codes to fix bugs in the diagnostic portion of the official GitHub page.
+\end{itemize}
+
+\divider
+
+\cvevent{{Camp Counsellor}}{Thornhill Community Centre}{July 2020 -- 2 Weeks}{Markham, ON}
+\begin{itemize}
+\item Learned how to properly resolve conflicts in a workspace. 
+\item Planned and formulated engaging activities for youth campers.
+\item Co-lead groups of up to 30 campers.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{{\href{https://github.com/KoralK5/KorCNN}{KorCNN \faExternalLink}}}{Personal Project}{May 2021 -- 1 Week}{}
+\begin{itemize}
+\item Built a convolutional neural network module from scratch in Python using the NumPy library.
+\item Added custom optimization methods and model creation.
+\item Formatted medical datasets for AI training.
+\item Integrated matplotlib training process graphs.
+\end{itemize}
+
+\divider
+
+\cvevent{{\href{https://github.com/KoralK5/CWSF2021}{Canada-Wide Science Fair \faExternalLink}}}{Partner Project}{April 2021 -- 6 Weeks}{}
+\begin{itemize}
+\item Developed a testing platform for neural network optimizers.
+\item Invented a physics-based backpropagation optimizer.
+\item Developed perceptron and convolutional neural network \newline modules from scratch in Python.
+\item Built a prototype website using HTML/CSS/JS and Flask.
+\end{itemize}
+
+\divider
+\cvevent{{\href{https://github.com/KoralK5/Autonomous-Car}{Autonomous Car \faExternalLink}}}{Personal Project}{November 2020 -- 2 Weeks}{}
+\begin{itemize}
+\item Built a self-driving car software in Python using OpenCV.
+\item Implemented lane detection and stabilized steering systems.
+\item Created a real-time video user interface.
+\end{itemize}
+
+\newpage
+
+\switchcolumn
+
+\cvsection{Achievements}
+
+\cvachievement{\hspace{1.5mm}\faTrophy}{\href{https://projectboard.world/ysc/project/cancer-detection-with-optimized-neural-networks}{Gold Medal -- YRSTF \faExternalLink}}{Top 10 in the York Region Science \& Technology Fair.}
+
+\divider
+
+\cvachievement{\faMedal}{\href{https://projectboard.world/ysc/project/cancer-detection-with-optimized-neural-networks}{Silver Medal -- CWSF \faExternalLink}}{An award presented by Youth \newline Science Canada to the best projects \newline in the Canada-Wide  Science Fair.}
+
+\divider
+
+\cvachievement{\hspace{1.5mm}\faHeartbeat}{\href{https://projectboard.world/ysc/project/cancer-detection-with-optimized-neural-networks}{Disease \& Illness Award -- YRSTF \faExternalLink}}{An award presented by York University to the best project involving disease and illness in the York Region Science \& Technology Fair.}
+
+\cvsection{Strengths \& Skills}
+
+\cvtag{Creativity}
+\cvtag{Organization}
+\cvtag{Teamwork}\\
+\cvtag{Critical Thinking}
+\cvtag{Problem Solving}
+
+\divider
+
+\cvtag{Artificial Intelligence}
+\cvtag{Electronics}\\
+\cvtag{Web Development}
+\cvtag{Data Science}
+
+\divider
+
+\cvtag{Python}
+\cvtag{C++}
+\cvtag{C}
+\cvtag{JavaScript}\\
+\cvtag{HTML \& CSS}
+\cvtag{Java}
+\cvtag{C\#}
+
+\cvsection{Languages}
+
+\cvskill{English}{5}
+Native
+
+\divider
+
+\cvskill{Turkish}{5}
+Native
+
+\divider
+
+\cvskill{French}{2}
+Intermediate
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{International Baccalaureate Program}{St. Robert CHS}{September 2019 -- Ongoing}{}
+\textbf{\color{accent}4.0}/4.0 GPA\par
+
+\medskip
+
+\cvsection{Publications}
+
+\nocite{*}
+
+\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}},type=article]
+
+\end{paracol}
+
+\end{document}
