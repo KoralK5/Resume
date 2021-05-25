@@ -260,10 +260,11 @@
     \begin{minipage}{\dimexpr\linewidth-\altacv@photos@width}%
     \raggedright%
     {\namefont\color{name}\MakeUppercase{\@name}\par}
-    \medskip
     {\taglinefont\color{tagline}\@tagline\par}
-    \medskip\medskip\medskip
+    \medskip\medskip
     {\personalinfofont\@personalinfo\par}
+    \medskip\medskip
+    \normalsize An extremely productive and innovative programmer/student with over 5 years of coding \\experience, hoping to make the world a better place to live in with artificial intelligence.
     \end{minipage}\hfill%
     \altacv@right@photos\par%
   \endgroup\medskip
